@@ -1,5 +1,4 @@
 export default function Skeleton ({type}) {
-
   return (
     <>
     {(() => {
