@@ -1,0 +1,22 @@
+{
+  "plants": [
+    {
+      "id": "48b4220a-d66b-4610-ac84-1c60071fb0eb",
+      "name": "aloszka",
+      "arrivalDate": "22.01.2023",
+      "passportNumber": "`123212312"
+    },
+    {
+      "id": "48b4220a-d66b-4610-ac84-1c60071fb0eb",
+      "name": "aloszka",
+      "arrivalDate": "22.01.2023",
+      "passportNumber": "`123212312"
+    },
+    {
+      "id": "105fb6b4-4cfa-4b31-8f28-8ae1eb439126",
+      "name": "aloszka",
+      "arrivalDate": "22.01.2023",
+      "passportNumber": "`123212312"
+    }
+  ]
+}
