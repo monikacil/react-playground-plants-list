@@ -1,8 +1,9 @@
-function createTableHeaders (array, forbiddenKey) {
+function createTableHeaders (array, forbiddenKeys) {
 	let initArray = []
 	array.forEach((obj) => {
 		Object.keys(obj).forEach((el) => {
-			if(el === forbiddenKey) return
+			forbiddenKeys.includes(el)
+			if(forbiddenKeys.includes(el)) return
 			initArray.push(el)
 		})
 	})

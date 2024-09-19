@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import {getPlants, addPlant, deletePlant, updatePlant} from '../api/apiCall';
 import Table from "./../components/layout/Table"
 import Modal from "./../components/layout/Modal";
-import PlantForm from "../components/PlantForm"
+import PlantForm from "./../components/PlantForm"
+import Widget from "../components/layout/Widget";
 
 export default function PlantsList () {
 
@@ -31,6 +32,7 @@ export default function PlantsList () {
 
   const addPlantToList = (plant)=> {
     addPlant(plant)
+    setShowModal(false)
     getPlants(setPlants)
   }
 
@@ -47,34 +49,26 @@ export default function PlantsList () {
     navigate(`/plants-list/${plant.id}`,{state:plant});
   }
 
-  const openAddPlantModal = () => {
+  const openPlantModal = () => {
     setModal(newPlantFormConfig)
     setShowModal(true)
   }
 
   return (
-    <>
-    <div className="py-4 flex justify-end">
-      <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
-        onClick={()=>openAddPlantModal()}
-        >
-        Add new plant
-      </button>
-    </div>
-    <Table 
-      arrayOfElements={plants} 
-      withoutColumnKey="id" 
-      onElementClick={(obj)=> goToPlantDetails(obj)} 
-      onDeleteClick={(id) => deletePlantFromList(id)} 
-      onUpdateClick={(obj) => updatePlantOnList(obj)}
+    <Widget title="PLant List" buttonText="Add new Plant" handleButtonClick={()=>openPlantModal()}>
+      <Table 
+        goToDetails="true"
+        arrayOfElements={plants} 
+        withoutColumnKeys={["id", "protection"]}
+        onElementClick={(obj)=> goToPlantDetails(obj)} 
+        onDeleteClick={(id) => deletePlantFromList(id)} 
+        onUpdateClick={(obj) => updatePlantOnList(obj)}
       /> 
-    <Modal
-      openModal={showModal}
-      closeModal={()=>setShowModal(false)}
-      config={modal}
-    />
-    </>
+      <Modal
+        openModal={showModal}
+        closeModal={()=>setShowModal(false)}
+        config={modal}
+      />
+    </Widget>
   )
 }

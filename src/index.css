@@ -5,7 +5,6 @@
 
 @layer components {
   .content-container {
-    height: calc(100vh - theme("height.header-min") - theme("height.footer-min"));
     padding: 2rem 1rem;
   }
 
