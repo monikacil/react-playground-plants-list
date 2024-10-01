@@ -1,0 +1,73 @@
+{
+  "plants": {
+    "plants-collection": [
+      {
+        "id": "584861a3-eeb7-4a7a-aed4-7527816abfb4",
+        "name": "aloszkavdsdd",
+        "arrivalDate": "12.02.2022",
+        "passportNumber": "`123212312",
+        "seller": "eweq",
+        "protection": {
+          "date": "12.03.2024",
+          "product": "nissorum",
+          "pests": "przedzior"
+        }
+      },
+      {
+        "id": "f2552aae-f93a-4212-a560-2d80174e177b",
+        "name": "Freja",
+        "arrivalDate": "12.02.2022",
+        "passportNumber": "dsd",
+        "seller": "ddsdsdsd",
+        "protection": {
+          "date": "12.03.2024",
+          "product": "nissorum",
+          "pests": "przedzior"
+        }
+      },
+      {
+        "id": "82736251-4bfd-4c48-9a1a-d174bb8a7b03",
+        "name": "Alocasia Sinuata",
+        "arrivalDate": "22.01.2023",
+        "passportNumber": "PL_sde90822",
+        "seller": "Centrum ogrodnicze silesia",
+        "protection": {
+          "date": "12.03.2024",
+          "product": "nissorum",
+          "pests": "przedzior"
+        }
+      }
+    ]
+  },
+  "sold-plants": [
+    {
+      "id": "584861a3-eeb7-4a7a-aed4-7527816abfb4",
+      "name": "aloszkavdsdd",
+      "soldDate": "12.02.2022",
+      "passportNumber": "`123212312",
+      "buyerName": "kasia",
+      "buyerAddress": "dddd",
+      "buyerCountryCode": "PL",
+      "protection": {
+        "date": "12.03.2024",
+        "product": "nissorum",
+        "pests": "przedzior"
+      }
+    },
+    {
+      "id": "584861a3-eeb7-4a7a-aed4-7527816aeeer2",
+      "name": "filek",
+      "soldDate": "12.02.2022",
+      "passportNumber": "`123212312",
+      "buyerName": "ola",
+      "buyerAddress": "dddd",
+      "buyerCountryCode": "PL",
+      "protection": {
+        "date": "12.03.2024",
+        "product": "nissorum",
+        "pests": "przedzior"
+      }
+    }
+  ]
+ 
+}
